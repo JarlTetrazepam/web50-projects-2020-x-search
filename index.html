@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
-    <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-    </body>
+  <head>
+    <title>Search</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="images.html"></a>Image Search</li>
+        <li><a href="advanced.html"></a>Advanced Search</li>
+      </ul>
+    </nav>
+    <form class="searchForm" action="https://google.com/search">
+      <label for="searchField">Enter your search query here</label>
+      <input type="text" name="q" id="searchField">
+      <label for="submitButton">Submit search query</label>
+      <input type="submit" value="Google Search" id="submitButton">
+    </form>
+  </body>
 </html>
