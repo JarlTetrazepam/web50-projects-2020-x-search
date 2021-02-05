@@ -1,4 +1,4 @@
-.searchForm__label--hidden {
+label.searchForm__label--hidden {
   opacity: 0;
   position: absolute;
 }
