@@ -8,24 +8,55 @@ h1 {
   align-self: flex-start;
 }
 
+h2 {
+  margin-bottom: 4vh;
+}
+
 label {
   font-size: var(--text-sm);
 }
 
-.searchForm__input__query {
-  border-radius: 0;
-  font-size: var(--text-sm)
-  padding: 2px;
+.bodyContainer {
+  margin-top: 2vh;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.searchForm__input__query:hover {
-  box-shadow: rgba(0, 0, 0, 0);
+.searchForm__input__query {
+  border-radius: 0;
+  font-size: var(--text-sm);
+  padding: 0px 2px;
+  min-height: inherit;
+}
+
+.searchForm__input__query:hover, .searchForm__input__query:focus {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  border: solid 1px rgb(var(--googleBlue));
 }
 
 .searchForm {
-  width: 90%;
+  max-width: 90%;
+  margin-left: 3vw;
+}
+
+.searchForm__itemWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5em;
+  margin: 0.3em
 }
 
 .searchForm__itemWrapper input {
-  transform: translateX(50%);
+  height: 2.2em;
+  margin-left: 3vw;
+}
+
+#submitButton {
+  color: white;
+  background-color: rgb(var(--googleBlue));
+  min-width: none;
+  align-self: flex-end;
+  padding: 0.5% 1%;
+  font-weight: bold;
+  margin-top: 2em;
 }
