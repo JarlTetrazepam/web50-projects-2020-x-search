@@ -2,32 +2,42 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css">
-    <title>Search</title>
+    <link rel="stylesheet" href="advanced.css">
+    <title>Advanced Search</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="images.html">Image Search</a></li>
-        <li><a href="advanced.html">Advanced Search</a></li>
-      </ul>
-    </nav>
-    <h1>Advanced Search</h1>
-    <form class="searchForm" action="https://google.com/search">
-      <h2>Find pages with...</h2>
-      <label for="allWords">all these words:</label>
-      <input type="text" name="as_q" id="allWords">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list__item"><a class="nav__list__item__anchor" href="index.html">Home</a></li>
+          <li class="nav__list__item"><a class="nav__list__item__anchor" href="images.html">Image Search</a></li>
+          <li class="nav__list__item"><a class="nav__list__item__anchor active" href="advanced.html">Advanced Search</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="bodyContainer">
+      <form class="searchForm" action="https://google.com/search">
+        <h1>Advanced Search</h1>
+        <h2>Find pages with...</h2>
+        <div class="searchForm__itemWrapper">
+          <label class="searchForm__label" for="allWords">all these words:</label>
+          <input class="searchForm__input__query" type="text" name="as_q" id="allWords">
+        </div>
+        <div class="searchForm__itemWrapper">
+          <label class="searchForm__label" for="exact">this exact word or phrase:</label>
+          <input class="searchForm__input__query" type="text" name="as_epq" id="exact">
+        </div>
+        <div class="searchForm__itemWrapper">
+          <label class="searchForm__label" for="anyWords">any of these words:</label>
+          <input class="searchForm__input__query" type="text" name="as_oq" id="anyWords">
+        </div>
+        <div class="searchForm__itemWrapper">
+          <label class="searchForm__label" for="noneWords">none of these words:</label>
+          <input class="searchForm__input__query" type="text" name="as_eq" id="noneWords">
+        </div>
 
-      <label for="exact">this exact word or phrase:</label>
-      <input type="text" name="as_epq" id="exact">
-
-      <label for="anyWords">any of these words:</label>
-      <input type="text" name="as_oq" id="anyWords">
-
-      <label for="noneWords">none of these words:</label>
-      <input type="text" name="as_eq" id="noneWords">
-
-      <input type="submit" value="Advanced Search" id="submitButton">
-    </form>
+        <input class="searchForm__inputWrapper__input" type="submit" value="Advanced Search" id="submitButton">
+      </form>
+    </section>
   </body>
 </html>

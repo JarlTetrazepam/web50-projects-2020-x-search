@@ -5,20 +5,31 @@
     <title>Image Search</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="images.html">Image Search</a></li>
-        <li><a href="advanced.html">Advanced Search</a></li>
-      </ul>
-    </nav>
-    <form class="searchForm" action="https://google.com/search">
-      <label class="searchForm__label--hidden" for="searchField">Enter your search query here</label>
-      <input type="text" name="q" id="searchField">
-      <input type="hidden" name="tbm" value="isch">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list__item"><a class="nav__list__item__anchor" href="index.html">Home</a></li>
+          <li class="nav__list__item"><a class="nav__list__item__anchor active" href="images.html">Image Search</a></li>
+          <li class="nav__list__item"><a class="nav__list__item__anchor" href="advanced.html">Advanced Search</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="bodyContainer">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google">
+      <form class="searchForm" action="https://google.com/search">
 
-      <label class="searchForm__label--hidden" for="submitButton">Submit search query</label>
-      <input type="submit" value="Google Search" id="submitButton">
-    </form>
+        <label class="searchForm__label--hidden" for="searchField">Enter your search query here</label>
+        <input class="searchForm__input__query" type="text" name="q" id="searchField">
+
+        <label class="searchForm__label--hidden" for="submitButton">Image Search</label>
+
+        <div class="searchForm__inputWrapper">
+
+          <input class="searchForm__inputWrapper__input" type="submit" value="Image Search" id="submitButton">
+          <input type="hidden" name="tbm" value="isch">
+
+        </div>
+      </form>
+    </section>
   </body>
 </html>

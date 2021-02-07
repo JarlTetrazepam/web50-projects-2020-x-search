@@ -1,4 +1,5 @@
 :root {
+  --googleRed: 217, 48, 37;
   font-family: "arial", "sans-serif";
   --defFontColor: 60, 64, 67;
   color: rgb(var(--defFontColor));
@@ -52,6 +53,7 @@ label.searchForm__label--hidden {
 body {
   height: 100vh;
   margin: 0;
+  transition: all 0.5s;
 }
 
 .bodyContainer {
@@ -69,6 +71,7 @@ body {
   width: auto;
   max-height: 100px;
   margin-bottom: 2%;
+  transition: all 0.5s;
 }
 
 .searchForm {
@@ -112,4 +115,9 @@ body {
 .searchForm__inputWrapper__input:hover {
   border: solid rgb(var(--queryBorderColor)) 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nav__list__item__anchor.active, .nav__list__item.active > .nav__list__item__anchor:hover {
+  text-decoration: underline;
+  cursor: default;
 }
