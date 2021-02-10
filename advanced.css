@@ -23,7 +23,7 @@ label {
 }
 
 .searchForm__input__query {
-  border-radius: 0;
+  border-radius: 0; 
   font-size: var(--fontSize-sm);
   padding: 0px 2px;
   min-height: inherit;
