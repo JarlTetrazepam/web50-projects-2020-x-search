@@ -1,5 +1,5 @@
 h1, h2 {
-  font-size: var(--text-md);
+  font-size: var(--fontSize-m);
   font-weight: normal;
 }
 
@@ -13,7 +13,7 @@ h2 {
 }
 
 label {
-  font-size: var(--text-sm);
+  font-size: var(--fontSize-sm);
 }
 
 .bodyContainer {
@@ -24,7 +24,7 @@ label {
 
 .searchForm__input__query {
   border-radius: 0;
-  font-size: var(--text-sm);
+  font-size: var(--fontSize-sm);
   padding: 0px 2px;
   min-height: inherit;
 }

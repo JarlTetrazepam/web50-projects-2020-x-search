@@ -11,14 +11,10 @@
   --text-base-size: 1em;
 
   /*type scale*/
-  --text-scale-ratio: 1.2;
-  --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
-  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
-  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
-  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
-  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
-  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --fontSize-scale-ratio: 1.2;
+  --fontSize-xs: calc((1em / var(--fontSize-scale-ratio)) / var(--fontSize-scale-ratio));
+  --fontSize-s: calc(var(--fontSize-xs) * var(--fontSize-scale-ratio));
+  --fontSize-m: calc(var(--fontSize-s) * var(--fontSize-scale-ratio) * var(--fontSize-scale-ratio));
 }
 
 label.searchForm__label--hidden {
@@ -44,7 +40,7 @@ label.searchForm__label--hidden {
 .nav__list__item__anchor {
   text-decoration: none;
   color: var(--defFontColor);
-  font-size: var(--text-sm);
+  font-size: var(--fontSize-s);
 }
 
 .nav__list__item__anchor:hover {
@@ -104,7 +100,7 @@ body {
   background-color: rgba(var(--submitBg), 1);
   margin-left: 3%;
   border: solid rgba(var(--submitBg), 1) 1px;
-  font-size: var(--text-sm);
+  font-size: var(--fontSize-s);
   padding: 1% 3%;
   line-height: 1.687rem;
   min-width: 54px;
